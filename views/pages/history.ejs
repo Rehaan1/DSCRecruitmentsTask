@@ -12,17 +12,21 @@
         <table style="width:100%">
 
           <tr>
-            <th>Details</th>
-            <th>Test</th>
-            <th>Dam</th>
+            <th>Date</th>
+            <th>Temperature</th>
+            <th>Description</th>
+            <th>Humidity</th>
+            <th>Windspeed</th>
           </tr>
-
+          <% for(var i=0; i< rows.length; i++){ %>
           <tr>
-            <td>alpha</td>
-            <td>Bravo</td>
-            <td>Charlie</td>
+            <td><%= rows[i].Date %></td>
+            <td><%= rows[i].Temp %></td>
+            <td><%= rows[i].Description %></td>
+            <td><%= rows[i].Humidity %></td>
+            <td><%= rows[i].Windspeed %></td>
           </tr>
-
+          <%} %>
         </table>
 
       </div>
