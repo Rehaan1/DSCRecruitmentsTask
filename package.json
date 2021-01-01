@@ -1,0 +1,23 @@
+{
+  "name": "dscrecruitment",
+  "version": "1.0.0",
+  "description": "DSC Recruitments",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Rehaan Mazid",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-oauth2": "^1.5.0",
+    "request": "^2.88.2",
+    "yargs": "^16.2.0"
+  }
+}
