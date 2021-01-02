@@ -9,6 +9,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <title>DSC Task</title>
+    <style type="text/css">
+      html,body
+      {
+        height: 100%;
+      }
+
+      .container
+      {
+        width:100%;
+        height:100%;
+      }
+
+      .main-body
+      {
+        padding: 2%;
+      }
+
+      .page-header
+      {
+        padding:5%;
+      }
+
+      .btn:hover
+      {
+        font-weight: 600;
+      }
+
+    </style>
   </head>
   <body>
     <div class="container">
@@ -16,20 +44,26 @@
     <div class="page-header text-center">
         <h1>Weather Report</h1>
         <div class="row">
-            <div class="col-lg-6 text-center">
+            <div class="col">
+
+            </div>
+            <div class="col-lg-2 text-center">
                 <a href="/logout" class="btn btn-default btn-sm">Logout</a>
             </div>
-            <div class="col-lg-6  text-center">
+            <div class="col-lg-2  text-center">
                 <a href="/history" class="btn btn-default btn-sm">History</a>
+            </div>
+            <div class="col">
+
             </div>
         </div>
 
     </div>
 
-    <div class="row">
+    <div class="row text-center">
 
 
-        <div class="col-sm-6">
+        <div class="col-sm-12 main-body">
             <div class="well">
                 <h3 class="text-danger">Hey <%= name %>!</h3>
 

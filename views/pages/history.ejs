@@ -4,31 +4,44 @@
     <meta charset="utf-8">
     <title>DSC Task</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style type="text/css">
+        .para-header
+        {
+            padding: 4%;
+        }
+        td
+        {
+            padding: 2%;
+        }
+    </style>
   </head>
   <body>
 
       <div class="container text-center">
-        <h1>History of Weather Records checked till date</h1>
-        <table style="width:100%">
+        <div class="para-header">
+            <h1>History of Weather Records checked till Date</h1>
+        </div>
+        <div class="table-div">
+            <table style="width:100%">
 
-          <tr>
-            <th>Date</th>
-            <th>Temperature</th>
-            <th>Description</th>
-            <th>Humidity</th>
-            <th>Windspeed</th>
-          </tr>
-          <% for(var i=0; i< rows.length; i++){ %>
-          <tr>
-            <td><%= rows[i].Date %></td>
-            <td><%= rows[i].Temp %></td>
-            <td><%= rows[i].Description %></td>
-            <td><%= rows[i].Humidity %></td>
-            <td><%= rows[i].Windspeed %></td>
-          </tr>
-          <%} %>
-        </table>
-
+              <tr>
+                <th class="text-danger">Date</th>
+                <th class="text-danger">Temperature</th>
+                <th class="text-danger">Description</th>
+                <th class="text-danger">Humidity</th>
+                <th class="text-danger">Windspeed</th>
+              </tr>
+              <% for(var i=0; i< rows.length; i++){ %>
+              <tr>
+                <td><%= rows[i].Date %></td>
+                <td><%= rows[i].Temp %></td>
+                <td><%= rows[i].Description %></td>
+                <td><%= rows[i].Humidity %></td>
+                <td><%= rows[i].Windspeed %></td>
+              </tr>
+              <%} %>
+            </table>
+        </div>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
